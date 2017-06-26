@@ -1,0 +1,25 @@
+package com.practice.singleton;
+
+import java.io.IOException;
+
+/*
+ * Hash code is the reference of object
+ * 
+ * 
+ */
+public class _App {
+
+	public static void main(String[] args) throws IOException {
+		/*MySingleTon st = new MySingleTon();
+		System.out.println("Hash code is : "+st.hashCode());
+		MySingleTon st1 = new MySingleTon();
+		System.out.println("Hash code is : "+st1.hashCode());
+		*/
+		
+		MySingleTon st =MySingleTon.getIstance();
+		System.out.println(st.hashCode());
+		System.out.println(MySingleTon.getIstance().hashCode());
+		
+		st.display("Welcome to _App file log");
+	}
+}
